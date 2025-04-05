@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./rishihood.png"> 
+    <title>Heuristic Evaluation: int.bahn.de vs. irctc.co.in</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            animation: slideIn 1s ease-in-out;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e9e9e9;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 1.4em;
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .rating {
+            font-weight: bold;
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        .image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            height: auto;
+            background-color: #1d2125;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image img {
+            width: 60%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .image video {
+            width: 60%;
+            height: auto;
+            border-radius: 8px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Heuristic Evaluation: Deutche Bahn vs IRCTC</h1>
+        
+        <div class="section">
+            <h2>1. Visibility of System Status</h2>
+            <p><strong>Deutche Bahn:</strong> Good - Clear progress indicators, system status updates, and loading feedback.</p>
+            <p><strong>Reason:</strong> Users are consistently informed about ongoing processes, ensuring a smooth experience.</p>
+            <p><strong>IRCTC:</strong> Below Average - Users experience delays without clear loading indicators, especially during peak hours.</p>
+            <p><strong>Reason:</strong> Lack of system status visibility leads to confusion and frustration among users.</p>
+            <div class="images">            
+                <figure class="image">
+                    <img src="./assets/d1.png" alt="Deutche Bahn Screenshot">
+                    <figcaption>Deutche Bahn</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./assets/i1.png" alt="IRCTC Screenshot">
+                    <figcaption>IRCTC</figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>2. User Control and Freedom</h2>
+            <p><strong>Deutche Bahn:</strong> Very Good - Clear exit options, back navigation, and undo features.</p>
+            <p><strong>Reason:</strong> Users can easily recover from mistakes and navigate freely.</p>
+            <p><strong>IRCTC:</strong> Average - Some pop-ups lack clear exit options, and session timeouts create frustration.</p>
+            <p><strong>Reason:</strong> Users feel restricted due to poor session handling and lack of undo options.</p>
+            <div class="images">            
+                    <figure class="image">
+                        <img src="./assets/d2.png" alt="Deutche Bahn Screenshot">
+                        <figcaption>Back Button to go back<br>Deutche Bahn</figcaption>
+                    </figure>
+                    <figure class="image">
+                        <img src="./assets/i2.png" alt="IRCTC Bahn Screenshot">
+                        <figcaption>Back Arrow to go back<br>IRCTC</figcaption>
+                    </figure>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>3. Consistency and Standards</h2>
+            <p><strong>Deutche Bahn:</strong> Very Good - Adheres to global design standards and maintains consistency across pages.</p>
+            <p><strong>Reason:</strong> Users experience a seamless interface, enhancing usability.</p>
+            <p><strong>IRCTC:</strong> Average - UI varies across pages, and older sections do not align with newer UI updates.</p>
+            <p><strong>Reason:</strong> Inconsistent UI elements cause confusion and reduce efficiency.</p>
+            <div class="images">            
+                <figure class="image">
+                    <video src="./assets/dv.mov" alt="Deutche Bahn Screenshot" autoplay loop muted>
+                </figure>
+                <figure class="image">
+                    <video src="./assets/iv.mov" alt="IRCTC Bahn Screenshot" autoplay loop muted>
+                </figure>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>4. Match Between System and Real World</h2>
+            <p><strong>Deutche Bahn:</strong> Good - Uses intuitive terminology and familiar booking flows.</p>
+            <p><strong>Reason:</strong> Familiar design makes it easier for users to interact with the system.</p>
+            <p><strong>IRCTC:</strong> Below Average - Some jargon-heavy terminology may confuse new users.</p>
+            <p><strong>Reason:</strong> Technical terms make it difficult for first-time users to understand the system.</p>
+            <div class="images">            
+                <figure class="image">
+                    <img src="./assets/d3.png" alt="Deutche Bahn Screenshot">
+                    <figcaption>Back Button to go back<br>Deutche Bahn</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./assets/i3.png" alt="IRCTC Bahn Screenshot">
+                    <figcaption>Back Arrow to go back<br>IRCTC</figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>5. Error Prevention</h2>
+            <p><strong>Deutche Bahn:</strong> Good - Provides helpful constraints and real-time validation.</p>
+            <p><strong>Reason:</strong> Prevents users from making mistakes, improving efficiency.</p>
+            <p><strong>IRCTC:</strong> Below Average - Frequent booking failures with unclear error messages.</p>
+            <p><strong>Reason:</strong> Users struggle with errors that do not provide clear resolution steps.</p>
+            <div class="images">            
+                <figure class="image">
+                    <img src="./assets/d4.png" alt="Deutche Bahn Screenshot">
+                    <figcaption>Back Button to go back<br>Deutche Bahn</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./assets/i4.png" alt="IRCTC Bahn Screenshot">
+                    <figcaption>Back Arrow to go back<br>IRCTC</figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>6. Recognition Rather Than Recall</h2>
+            <p><strong>Deutche Bahn:</strong> Good - Smart autofill and recent searches help ease navigation.</p>
+            <p><strong>Reason:</strong> Users can efficiently select options without having to remember past interactions.</p>
+            <p><strong>IRCTC:</strong> Below Average - Lack of personalized recommendations and previous trip history.</p>
+            <p><strong>Reason:</strong> Users have to manually input data, increasing cognitive load.</p>
+            <div class="images">            
+                <figure class="image">
+                    <img src="./assets/d5.png" alt="Deutche Bahn Screenshot">
+                    <figcaption>Back Button to go back<br>Deutche Bahn</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./assets/i5.png" alt="IRCTC Bahn Screenshot">
+                    <figcaption>Back Arrow to go back<br>IRCTC</figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Analysis Report</h2>
+            <p>Overall, <strong>int.bahn.de</strong> demonstrates a superior user experience with strong adherence to usability heuristics. It offers intuitive navigation, clear system status visibility, and effective error handling. <strong>irctc.co.in</strong> struggles with performance issues, inconsistent UI, and error prevention mechanisms, affecting the booking experience.</p>
+            <div class="images">            
+                <figure class="image">
+                    <video src="./assets/dv.mov" alt="Deutche Bahn Screenshot" autoplay loop muted>
+                </figure>
+                <figure class="image">
+                    <video src="./assets/iv.mov" alt="IRCTC Bahn Screenshot" autoplay loop muted>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
